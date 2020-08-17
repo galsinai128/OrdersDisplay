@@ -1,0 +1,95 @@
+.sideBarItemContainer{
+    margin: 10px;
+}
+
+.sideBarItemCollapsed{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.sideBarItemContainerCollapsed{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.sideBarItemContainerOpen{
+    background-color: white;
+    color:#7ec2f9;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sideBarItemOpen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallContainer{
+    display: flex;
+    justify-content: flex-start;  
+}
+
+.sideBarItemTitle{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+.listItemContinerLast {
+    border-bottom: none;
+  }
+
+.borderButtomItem {
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.borderButtomItem {
+    border-bottom: 1px solid #7ec2f9;
+    width: 100%;
+}
+
+
+
+.SectionItemImage{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.addButton{
+    background-color: #0d9cf2; 
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    height: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.outerItemContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign{
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+.listItemContiner{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listItem{
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.listItemContinerLast {
+    border-bottom: none;
+  }
+
+.borderButtomItem {
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.borderButtomItem {
+    border-bottom: 1px solid #7ec2f9;
+    width: 100%;
+}
+
+.SectionItemImage{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.actionButton{
+    background-color: #a2abb8; 
+    border: none;
+    color: white;
+    padding: 10px 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    height: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none; 
+}
+
+.outerItemContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.innerContainer{
+    display: flex;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle{
+    color: gray;
+    font-size: 12px;
+}
+
+.actionButtonX{
+    background-color: white;
+    color: gray;
+}

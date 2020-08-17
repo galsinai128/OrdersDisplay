@@ -1,0 +1,115 @@
+.SectionItemContainer{
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    margin: 10px 10px 10px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.editedItem{
+    background-color: #0d9cf2;
+}
+
+
+.SectionItemTitle {
+    font-size: 12px;
+    font-weight: bold;
+    color: #627588;
+
+}
+
+.editedItemName{
+    color: white;
+}
+
+
+.SectionItemValue{
+    font-size: 15px;
+}
+
+.SectionItemButton{
+    text-align: right;
+}
+
+.SectionItemImage{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonsPlaceholder{
+    height: 15px;
+}
+
+.itemFooter{
+    height: 15px;
+}
+
+.bgColorRed {
+    background-color: #e56c6c;
+    color: white;
+    height: 25px;
+    padding: 5px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.bgColorGreen {
+    background-color: #55cfb6;
+    color: white;
+    height: 25px;
+    padding: 5px;
+    width: 65px;
+    border-radius: 5px;
+}
+
+.longItem{
+    width: 390px;
+}
+
+.inputContainer{
+    display: flex;
+}
+
+.smallInput{
+    width: 20px;
+    outline: none;
+}
+
+.normalInput{
+    width: 300px;
+    outline: none;
+}
+
+.bigInput{
+    width: 350px;
+    outline: none;
+}
+
+.locked{
+    color:#0d9cf2;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+}
+
+.lockedIcon{
+    color: #0d9cf2  ;
+    margin-right: 10px;
+ 
+}
+
+.lockContainer{
+    display: flex;
+    justify-content: flex-end;
+}
