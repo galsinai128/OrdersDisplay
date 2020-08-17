@@ -30,21 +30,25 @@ export const { setData, setItem } = spreadSheetSlice.actions;
 
 
 export const getSpreadSheetData = (): AppThunk => dispatch => {
-    let data = getData();
-    dispatch(setData(data))
+    getData().then((data: any)=>{
+      dispatch(setData(data))
+    })
   };
 
 export const setSpreadSheetItem = (sectionItem:any): AppThunk => dispatch => {
-  let data = JSON.parse(JSON.stringify(getData()));;
-  data.sections.map((section: any) => {
-    for (let i in section.data){
-      if (section.data[i].name === sectionItem.name) {
-        section.data[i].value = sectionItem.value;
-      } 
-    }
+  getData().then((dataToParse: any)=>{
+    let data = JSON.parse(JSON.stringify(dataToParse));;
+    data.sections.map((section: any) => {
+      for (let i in section.data){
+        if (section.data[i].name === sectionItem.name) {
+          section.data[i].value = sectionItem.value;
+        } 
+      }
+    })
+    setDataApi(data) //should be async if api call is realy implemented
+    dispatch(setItem(data))    
   })
-  setDataApi(data) //should be async if api call is realy implemented
-  dispatch(setItem(data))
+
 };
 
 export const selectData = (state: RootState) => state.spreadSheet.data;

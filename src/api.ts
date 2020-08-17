@@ -1,6 +1,12 @@
 
 export function getData(){
-    return fakeDataFromServer;
+    // I created a promise myself to simulate api call
+    const promise1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(fakeDataFromServer);
+        }, 10);
+      });
+    return promise1;
 }
 
 
